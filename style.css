@@ -2,10 +2,10 @@
 
 :root {
   --cor-de-fundo: #1e1e1e;
-  --verde: #6fff57;
+  --verde: #50147e;
   --branco: #ffffff;
-  --botao-ativo: #3a375e;
-  --botao-inativo: rgba(58, 55, 94, 0.5);
+  --botao-ativo: #a81537;
+  --botao-inativo: rgba(216, 53, 89, 0.832);
   --texto-fundo: rgba(58, 55, 94, 0.3);
 }
 
@@ -52,7 +52,7 @@ body {
 }
 
 .botao:first-child {
-  border-radius: 40px 40px 0 0;
+  border-radius: 40px 0 0 40px;
 }
 
 .botoes {
@@ -64,11 +64,40 @@ body {
   }
 
   .botao:last-child {
-    border-radius: 0 40px 0 0;
+    border-radius: 0 40px 40px 0;
   }
 }
+
 .ativo {
   background-color: var(--botao-ativo);
   border-bottom: 4px solid var(--verde);
+ .aba-conteudo.ativo {
+  display: block;
+} 
+
+.abas-textos {
+  background-color: var(--texto-fundo);
+  padding: 40px;
+  border-radius: 0 0 40px 40px;
 }
 
+.botao.ativo {
+  background-color: var(--botao-ativo);
+  border-bottom: 4px solid var(--verde);
+}.aba-conteudo.ativo {
+  display: block;
+}
+
+
+}
+
+.aba-conteudo-titulo-principal {
+  font-size: 28px;
+  text-align: center;
+}
+
+.aba-conteudo-titulo-secundario {
+  text-align: center;
+  color: var(--verde);
+  text-transform: uppercase;
+}
